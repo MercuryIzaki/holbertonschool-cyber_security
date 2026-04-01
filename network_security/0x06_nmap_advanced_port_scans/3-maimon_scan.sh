@@ -1,2 +1,2 @@
 #!/bin/bash
-nmap -sM -vv -p ftp,ssh,telnet,http,https "$1"
+nmap -sM -vv --reason -p http,https,ftp,ssh,telnet "$1"
