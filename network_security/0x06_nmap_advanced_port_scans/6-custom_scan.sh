@@ -1,4 +1,2 @@
 #!/bin/bash
-TARGET="$1"
-PORTS="$2"
-nmap -scanflags URGACKPSHRSTSYNFIN -p "$PORTS" -oN custom_scan.txt "$TARGET" > /dev/null 2>&1
+nmap -scanflags URGACKPSHRSTSYNFIN -p "$2" -oN custom_scan.txt "$1" > /dev/null 2>&1
